@@ -53,3 +53,15 @@ footer {
 
 /* Display font for site name and headings */
 .site-name, h1, h2 { font-family: "Makebonk", Georgia, serif; font-weight: normal; letter-spacing: .02em; }
+
+/* Highlights page */
+.track { margin: 0 0 2.5rem; }
+.track h2 { font-size: 1.6rem; color: var(--accent); margin: 0 0 .2rem; }
+.track-meta { margin: 0 0 1rem; color: var(--muted); font: 14px/1.4 system-ui, -apple-system, sans-serif; }
+.highlights { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
+.highlights li { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1rem; }
+.tags { list-style: none; padding: 0; margin: .8rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.tags li {
+  border: 1px solid var(--line); border-radius: 999px; padding: .3rem .8rem;
+  font: 14px/1.4 system-ui, -apple-system, sans-serif;
+}
