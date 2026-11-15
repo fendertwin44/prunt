@@ -1,0 +1,33 @@
+:root {
+  --bg: #fbfaf7;
+  --text: #1f2328;
+  --muted: #6b7280;
+  --accent: #2f5d50;
+  --line: #e5e2da;
+  --max: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16181b; --text: #e8e6e1; --muted: #9aa0a6; --accent: #7fbfa9; --line: #2a2d31; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+header, main, footer { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+header {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: .5rem 1.5rem; padding-top: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line);
+}
+.site-name { font-size: 1.35rem; font-weight: bold; color: var(--text); text-decoration: none; letter-spacing: .01em; }
+nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font: 15px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
+main { padding-top: 2.5rem; padding-bottom: 3rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; }
+h2 { font-size: 1.3rem; margin: 2rem 0 .5rem; }
+a { color: var(--accent); }
+footer {
+  padding-top: 1rem; padding-bottom: 2rem; border-top: 1px solid var(--line);
+  color: var(--muted); font: 14px/1.4 system-ui, -apple-system, sans-serif;
+}
