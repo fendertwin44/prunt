@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Makebonk";
+  src: url("/fonts/makebonk.woff2") format("woff2"), url("/fonts/makebonk.ttf") format("truetype");
+  font-display: swap;
+}
 :root {
   --bg: #fbfaf7;
   --text: #1f2328;
@@ -45,3 +50,6 @@ footer {
 .card h2 { margin: 0 0 .4rem; font-size: 1.1rem; color: var(--accent); }
 .card p { margin: 0; font-size: .98rem; }
 .closing { border-top: 1px solid var(--line); padding-top: 1.5rem; color: var(--muted); }
+
+/* Display font for site name and headings */
+.site-name, h1, h2 { font-family: "Makebonk", Georgia, serif; font-weight: normal; letter-spacing: .02em; }
