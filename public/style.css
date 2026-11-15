@@ -31,3 +31,17 @@ footer {
   padding-top: 1rem; padding-bottom: 2rem; border-top: 1px solid var(--line);
   color: var(--muted); font: 14px/1.4 system-ui, -apple-system, sans-serif;
 }
+
+/* Landing page */
+.hero { padding: 2rem 0 2.5rem; }
+.eyebrow {
+  margin: 0 0 .5rem; color: var(--accent);
+  font: 600 13px/1.4 system-ui, -apple-system, sans-serif; letter-spacing: .12em; text-transform: uppercase;
+}
+.hero h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); margin-bottom: 1rem; }
+.lede { font-size: 1.2rem; color: var(--muted); max-width: 34em; margin: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; margin: 1rem 0 2.5rem; }
+.card { border: 1px solid var(--line); border-radius: 10px; padding: 1.1rem 1.2rem; }
+.card h2 { margin: 0 0 .4rem; font-size: 1.1rem; color: var(--accent); }
+.card p { margin: 0; font-size: .98rem; }
+.closing { border-top: 1px solid var(--line); padding-top: 1.5rem; color: var(--muted); }
