@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The dog · prunt.net</title>
   <link rel="stylesheet" href="/style.css">
+  <style>
+    .dog-photo { margin: 0; }
+    .dog-photo img {
+      display: block; width: 100%; max-width: 560px; height: auto;
+      border-radius: 14px; border: 1px solid var(--line);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -15,7 +22,9 @@
   </header>
   <main>
     <h1>The dog</h1>
-    <p>Photo coming soon.</p>
+    <figure class="dog-photo">
+      <img src="/dog.jpg" width="1200" height="1600" alt="A black and white dog with a graying muzzle, tongue out, on a sunny day in the park">
+    </figure>
   </main>
   <footer>&copy; 2026 prunt.net</footer>
 </body>
