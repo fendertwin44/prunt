@@ -65,3 +65,29 @@ footer {
   border: 1px solid var(--line); border-radius: 999px; padding: .3rem .8rem;
   font: 14px/1.4 system-ui, -apple-system, sans-serif;
 }
+
+/* Plays page */
+.play-index { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 2rem; }
+.play-index a {
+  border: 1px solid var(--line); border-radius: 999px; padding: .3rem .8rem; text-decoration: none;
+  font: 14px/1.4 system-ui, -apple-system, sans-serif;
+}
+.play-key, .play { margin: 0 0 3rem; scroll-margin-top: 1rem; }
+.play h2, .play-key h2 { font-size: 1.6rem; color: var(--accent); margin: 0 0 .4rem; }
+.play figure { margin: 1rem 0 1.2rem; }
+.play svg { width: 100%; height: auto; display: block; }
+.play figcaption {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center; margin-top: .4rem;
+  color: var(--muted); font: 14px/1.4 system-ui, -apple-system, sans-serif;
+}
+.legend { width: 100%; max-width: 560px; height: auto; display: block; margin-top: .8rem; }
+.legend text { fill: var(--muted); font: 13px system-ui, -apple-system, sans-serif; }
+.court { fill: none; stroke: var(--muted); stroke-width: 1; opacity: .6; }
+.pl circle { fill: var(--accent); }
+.pl text { fill: var(--bg); font: 600 14px system-ui, -apple-system, sans-serif; text-anchor: middle; dominant-baseline: central; }
+.ball { fill: none; stroke: #c98a1e; stroke-width: 1.5; }
+.cut { fill: none; stroke: #d85a30; stroke-width: 1.75; }
+.pass { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.pass.alt { opacity: .5; }
+.scr, .bar { stroke: #378add; stroke-width: 2; }
+.bar { stroke-width: 2.5; }
